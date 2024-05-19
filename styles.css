@@ -38,10 +38,11 @@ h1 {
     font-size: 4.5vw; 
     color: white;
     text-align: center;
-    font-style: italic;}
+    font-style: italic;
+    transition: 0.3s ease-in-out;}
 
 .HomeDesign {
-    padding: 0 5vw 20vw 5vw;
+    padding: 0 5vw 10vw 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,24 +60,24 @@ h1 {
     margin-top: 11.5vw;
     transition: 0.5s ease-in-out;}
 
-.HomeDesign .Homebox:hover{
-    transform: scale(1.03);
+.HomeDesign:hover .Homebox > h1{
     font-style: normal;}
 
-
+.HomeDesign .Homebox:hover{
+    transform: scale(1.1);
+    font-style: normal;}
 
 .HomeDesign::before {
     content: '';
     position: absolute;
     width: 100vw;
-    height: 60vw;
+    height: 53vw;
     background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 0.5)),url("./Image/Tiger.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    margin-top: 19.5vw;
-}
+    margin-top: 9.5vw;}
 
 .AboutDesign {
     padding: 1vw 0 0 0;
@@ -89,8 +90,7 @@ h1 {
     background-image: url(./Image/Jheron.jpg);
     background-size: 42vw 43vw;
     background-position: left;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat;}
 
 .AboutDesign::before {
     content: '';
@@ -98,90 +98,11 @@ h1 {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(90deg, #060507 38%, #ffffff 85%);
-    z-index: -1;
-}
+    z-index: -99;}
 
-.AboutDesign .Aboutboxone {
-    word-wrap: break-word;
-    width: 63vw;
-    height: 11vw;
-    margin: 0 0 0 39vw;
-    padding: 2vw;
-    transition: 0.5s ease-in-out;
-    background-color: rgba(10, 10, 10, 0.7);
-    z-index: 1;
-}
-
-.AboutDesign .Aboutboxone > p {
-    font-size: 1.3vw;
-    font-style: italic;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 2vw 2vw 2vw 2vw;
-}
-
-.AboutDesign .Aboutboxone > h1 {
-    font-size: 2vw;
-    font-style: italic;
-    color: #FFFFFF;
-    text-align: left;
-    padding: 2vw 2vw 2vw 2vw;
-    margin-top: -3.5vw;
-}
-
-.AboutDesign .Aboutboxone:hover {
-    transform: scale(1.03);
-    background-color: rgba(0, 0, 0);
-}
-
-.AboutDesign .Aboutboxtwo {
-    word-wrap: break-word;
-    width: 63vw;
-    height: 11vw;
-    margin: 0 0 0 39vw;
-    padding: 2vw;
-    transition: 0.5s ease-in-out;
-    background-color: rgba(10, 10, 10, 0.7);
-    z-index: 1;
-}
-
-.AboutDesign .Aboutboxtwo > p {
-    font-size: 1.3vw;
-    font-style: italic;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 2vw 2vw 2vw 2vw;
-}
-
-.AboutDesign .Aboutboxtwo:hover {
-    transform: scale(1.03);
-    background-color: rgba(0, 0, 0);
-}
-
-.AboutDesign .Aboutboxthree {
-    word-wrap: break-word;
-    width: 63vw;
-    height: 11vw;
-    margin: 0 0 0 39vw;
-    padding: 2vw;
-    transition: 0.5s ease-in-out;
-    background-color: rgba(10,10,10, 0.7);
-    z-index: 1;
-}
-
-.AboutDesign .Aboutboxthree > p {
-    font-size: 1.3vw;
-    font-style: italic;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 2vw 2vw 2vw 2vw;
-}
-
-.AboutDesign .Aboutboxthree:hover {
-    transform: scale(1.03);
-    background-color: rgba(0, 0, 0);
-}
-
+.AboutDesign .Aboutboxone,
+.AboutDesign .Aboutboxtwo,
+.AboutDesign .Aboutboxthree,
 .AboutDesign .Aboutboxfour {
     word-wrap: break-word;
     width: 63vw;
@@ -190,42 +111,64 @@ h1 {
     padding: 2vw;
     transition: 0.5s ease-in-out;
     background-color: rgba(10, 10, 10, 0.7);
-    z-index: 1;
-}
+    z-index: 1;}
 
+.AboutDesign .Aboutboxone:hover,
+.AboutDesign .Aboutboxtwo:hover,
+.AboutDesign .Aboutboxthree:hover,
+.AboutDesign .Aboutboxfour:hover {
+    transform: scale(1.03);
+    background-color: #000000;
+    z-index: 1;}
+
+.AboutDesign .Aboutboxone > p,
+.AboutDesign .Aboutboxtwo > p,
+.AboutDesign .Aboutboxthree > p,
 .AboutDesign .Aboutboxfour > p {
     font-size: 1.3vw;
     font-style: italic;
     color: #FFFFFF;
     text-align: center;
-    padding: 2vw 2vw 2vw 2vw;
-}
+    padding:  0 2vw 2vw 2vw;
+    transition: 1s ease-in-out;
+    opacity: 0;}
 
-.AboutDesign .Aboutboxfour:hover {
+.AboutDesign .Aboutboxone:hover  > p,
+.AboutDesign .Aboutboxtwo:hover > p,
+.AboutDesign .Aboutboxthree:hover > p,
+.AboutDesign .Aboutboxfour:hover > p{
     transform: scale(1.03);
-    background-color: rgba(0, 0, 0);
-}
-
-.AboutDesign .Aboutboxfive {
-    word-wrap: break-word;
-    width: 63vw;
-    height: 11vw;
-    margin: 0 0 0 39vw;
-    padding: 2vw;
-    transition: 0.5s ease-in-out;
-    background-color: rgba(10,10,10, 0.7);
     z-index: 1;
-}
-
-.AboutDesign .Aboutboxfive > p {
-    font-size: 1.3vw;
+    opacity: 1;}
+    
+.AboutDesign .Aboutboxone > h1,
+.AboutDesign .Aboutboxtwo > h1,
+.AboutDesign .Aboutboxthree > h1,
+.AboutDesign .Aboutboxfour > h1 {
+    font-size: 3vw;
     font-style: italic;
     color: #FFFFFF;
     text-align: center;
     padding: 2vw 2vw 2vw 2vw;
-}
+    margin-top: -3.5vw;
+    transition:step-start;}
 
-.AboutDesign .Aboutboxfive:hover {
-    transform: scale(1.1);
-    background-color: rgba(0, 0, 0);
-}
+.AboutDesign .Aboutboxone:hover  > h1,
+.AboutDesign .Aboutboxtwo:hover > h1,
+.AboutDesign .Aboutboxthree:hover > h1,
+.AboutDesign .Aboutboxfour:hover > h1{
+    transform: scale(1.03);
+    z-index: 1;
+    font-style: normal;
+    opacity: 1;}
+    
+
+
+
+
+
+ 
+    
+  
+    
+  
