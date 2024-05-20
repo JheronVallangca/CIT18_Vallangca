@@ -41,12 +41,12 @@ h1 {
     font-size: 4.5vw; 
     color: white;
     text-align: center;
-    font-style: italic;
+    font-style: normal;
     transition: 0.3s ease-in-out;}
 
 p {
     margin-top: .5vw;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: white;
     text-align: left;
     font-style: normal;
@@ -72,12 +72,8 @@ p {
     margin-top: 11.5vw;
     transition: 0.5s ease-in-out;}
 
-.HomeDesign:hover .Homebox > h1{
-    font-style: normal;}
-
 .HomeDesign .Homebox:hover{
-    transform: scale(1.1);
-    font-style: normal;}
+    transform: scale(1.1);}
 
 .HomeDesign::before {
     content: '';
@@ -89,12 +85,12 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    margin-top: 9.5vw;}
+    margin-top: 12vw;}
 
 .PersonalDesign::before {
     content: '';
     position: absolute;
-    margin-top: 11vw;
+    margin-top: 12vw;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -114,7 +110,7 @@ p {
     word-wrap: break-word;
     width: 64vw;
     height: 19vw;
-    margin: 10.5vw 0 0 38vw;
+    margin: 12vw 0 0 38vw;
     padding: 3vw;
     background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(80, 80, 80,0.5)), url(./Image/AGAIN1.jpg);
     background-repeat: no-repeat;
@@ -171,8 +167,22 @@ p {
     background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)),url(./Image/elem.PNG);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1;}    
+    z-index: 1;}  
 
+.PersonalDesign .Personalboxone > p,
+.PersonalDesign .Personalboxtwo > p{
+    font-size: 1.2vw;
+    padding:  0.5vw 2vw 0 2vw;
+    transition: 1s ease-in-out;
+    opacity: 0;}    
+
+.AboutDesign .Aboutboxone > p,
+.AboutDesign .Aboutboxtwo > p,
+.AboutDesign .Aboutboxthree > p{
+    padding:  0 2vw 0 2vw;
+    transition: 1s ease-in-out;
+    opacity: 0;}
+    
 .AboutDesign .Aboutboxone,
 .AboutDesign .Aboutboxtwo,
 .AboutDesign .Aboutboxthree{
@@ -184,30 +194,6 @@ p {
     background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(80, 80, 80,0.5));
     z-index: 1;}
 
-.PersonalDesign .Personalboxone > p,
-.PersonalDesign .Personalboxtwo > p,
-.AboutDesign .Aboutboxone > p{
-    font-size: 1.2vw;
-    padding:  0.8vw 2vw 0 2vw;
-    transition: 1s ease-in-out;
-    opacity: 0;}
-
-.AboutDesign .Aboutboxtwo > p,
-.AboutDesign .Aboutboxthree > p{
-    padding:  0 2vw 0 2vw;
-    transition: 1s ease-in-out;
-    opacity: 0;}
-
-    
-.PersonalDesign .Personalboxone:hover > p,
-.PersonalDesign .Personalboxtwo:hover > p,
-.AboutDesign .Aboutboxone:hover > p,
-.AboutDesign .Aboutboxtwo:hover > p,
-.AboutDesign .Aboutboxthree:hover > p{
-    transform: scale(1.03);
-    z-index: 1;
-    opacity: 1;}
-    
 .AboutDesign .Aboutboxone > h1,
 .AboutDesign .Aboutboxtwo > h1,
 .AboutDesign .Aboutboxthree > h1{
@@ -215,6 +201,14 @@ p {
     padding: 3vw 2vw .5vw 2vw;
     margin-top: -3.5vw;
     transition:step-start;}
+ 
+.PersonalDesign .Personalboxone > h1{
+    margin-top: -2.5vw;
+}    
+
+.PersonalDesign .Personalboxone:hover > h1{
+    opacity: 0;
+}    
 
 .AboutDesign .Aboutboxone:hover > h1,
 .AboutDesign .Aboutboxtwo:hover > h1,
@@ -223,4 +217,12 @@ p {
     z-index: 1;
     font-style: normal;
     opacity: 1;}
-
+ 
+.PersonalDesign .Personalboxone:hover > p,
+.PersonalDesign .Personalboxtwo:hover > p,
+.AboutDesign .Aboutboxone:hover > p,
+.AboutDesign .Aboutboxtwo:hover > p,
+.AboutDesign .Aboutboxthree:hover > p{
+    transform: scale(1.03);
+    z-index: 1;
+    opacity: 1;}
