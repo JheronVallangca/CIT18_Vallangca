@@ -7,11 +7,12 @@ const sr = ScrollReveal({
 
 sr.reveal('.PersonalDesign .Personalboxone', {
     origin: 'top',
-    delay:150,  
+    delay:250,  
 });
 
 sr.reveal('.PersonalDesign .Personalboxtwo', {
     origin: 'bottom',
+    delay:150,
 });
 
 sr.reveal('.AboutDesign .Aboutboxone', { 
