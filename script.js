@@ -28,3 +28,18 @@ sr.reveal('.AboutDesign .Aboutboxthree', {
     origin: 'right',
     delay: 400,
 });
+
+sr.reveal('.WorksDesign .Worksboxone', { 
+    origin: 'top',
+});
+
+sr.reveal('.WorksDesign .Worksboxtwo', { 
+    origin: 'top',
+    delay: 200,
+});
+
+sr.reveal('.WorksDesign .Worksboxthree', { 
+    origin: 'top',
+    delay: 400,
+});
+

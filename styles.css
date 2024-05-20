@@ -133,7 +133,7 @@ p {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image:linear-gradient(rgba(80, 80, 80, 0.2), rgba(0, 0, 0,1)), url("./Image/Jheron-removebg-preview.png");
+    background-image: url("./Image/Jheron-removebg-preview.png");
     background-size: 42vw 40vw;
     background-repeat: no-repeat;}
 
@@ -274,7 +274,7 @@ p {
     transform: scale(1.03);
     z-index: 1;
     opacity: 1;}
-
+    
     .WorksDesign {
         display: flex;
         align-items: flex-start;
@@ -285,29 +285,70 @@ p {
     }
     
     .WorksDesign div {
-        width: 50vw; 
-        height: 25vw; 
+        margin: 2vw;
+        width: 40vw;
+        height: 15vw;
+        padding: 2vw;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-size: 15vw 15vw;
         background-position: center;
-        margin-top: -3vw;
         z-index: 1;
+        transition: 1s ease-in-out;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .WorksDesign div:hover img {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        position: relative;
+    }
+    
+    .WorksDesign .Worksboxone img {
+        width: 15vw;
+        height: 27vw;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        left: 20%;
+    }
+    
+    .WorksDesign .Worksboxtwo img {
+        width: 100%;
+        height: auto;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    .WorksDesign .Worksboxthree img {
+        width: 15vw;
+        height: 27vw;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        left:20%
+    }
+    
+    .WorksDesign .Worksboxone:hover {
+        height: 81vw;
+    }
+    
+    .WorksDesign .Worksboxtwo:hover {
+        height: 48vw;
+    }
+    
+    .WorksDesign .Worksboxthree:hover {
+        height: 87vw;
     }
     
     .WorksDesign .Worksboxone {
-        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)), url(./Image/adalo.png);
+        background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/adalo.png);
     }
     
     .WorksDesign .Worksboxtwo {
-        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)), url(./Image/wordpress_PNG47.png);
+        background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/wordpress_PNG47.png);
     }
     
     .WorksDesign .Worksboxthree {
-        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)), url(./Image/figma.png);
+        background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/figma.png);
     }
     
-    .WorksDesign .Worksboxfour {
-        background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)), url(./Image/guitar.png);
-    }
-    
-    
+   
