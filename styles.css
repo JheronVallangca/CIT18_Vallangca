@@ -275,80 +275,68 @@ p {
     z-index: 1;
     opacity: 1;}
     
-    .WorksDesign {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        overflow: hidden;
-        flex-direction: row;
-        position: relative;
-    }
+.WorksDesign {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex-direction: row;
+    position: relative;}
     
-    .WorksDesign div {
-        margin: 2vw;
-        width: 40vw;
-        height: 15vw;
-        padding: 2vw;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        z-index: 1;
-        transition: 1s ease-in-out;
-        overflow: hidden;
-        position: relative;
-    }
+.WorksDesign div {
+    margin: 2vw;
+    width: 40vw;
+    height: 15vw;
+    padding: 2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    position: relative;}
     
-    .WorksDesign div:hover img {
-        opacity: 1;
-        transition: opacity 0.5s ease;
-        position: relative;
-    }
+.WorksDesign div:hover img {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    position: relative;}
     
-    .WorksDesign .Worksboxone img {
-        width: 15vw;
-        height: 27vw;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        left: 20%;
-    }
+.WorksDesign .Worksboxone img {
+    width: 15vw;
+    height: 27vw;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    left: 20%;}
     
-    .WorksDesign .Worksboxtwo img {
-        width: 100%;
-        height: auto;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
+.WorksDesign .Worksboxtwo img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;}
+
+.WorksDesign .Worksboxthree img {
+    width: 15vw;
+    height: 27vw;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    left:20%}
     
-    .WorksDesign .Worksboxthree img {
-        width: 15vw;
-        height: 27vw;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        left:20%
-    }
+.WorksDesign .Worksboxone:hover {
+    height: 81vw;}
     
-    .WorksDesign .Worksboxone:hover {
-        height: 81vw;
-    }
+.WorksDesign .Worksboxtwo:hover {
+    height: 48vw;}
     
-    .WorksDesign .Worksboxtwo:hover {
-        height: 48vw;
-    }
+.WorksDesign .Worksboxthree:hover {
+    height: 87vw;}
     
-    .WorksDesign .Worksboxthree:hover {
-        height: 87vw;
-    }
+.WorksDesign .Worksboxone {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/adalo.png);}
     
-    .WorksDesign .Worksboxone {
-        background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/adalo.png);
-    }
+.WorksDesign .Worksboxtwo {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/wordpress_PNG47.png);}
     
-    .WorksDesign .Worksboxtwo {
-        background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/wordpress_PNG47.png);
-    }
-    
-    .WorksDesign .Worksboxthree {
-        background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/figma.png);
-    }
+.WorksDesign .Worksboxthree {
+    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/figma.png);}
     
    
