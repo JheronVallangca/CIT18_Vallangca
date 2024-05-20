@@ -1,18 +1,18 @@
 const sr = ScrollReveal({
     distance: '100px',
-    duration: 1500,
+    duration: 1700,
     easing: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-    interval: 100, 
+    interval: 1000, 
 });
 
 sr.reveal('.PersonalDesign .Personalboxone', {
     origin: 'top',
-    delay:250,  
+    delay:350,  
 });
 
 sr.reveal('.PersonalDesign .Personalboxtwo', {
     origin: 'bottom',
-    delay:150,
+    delay:250,
 });
 
 sr.reveal('.AboutDesign .Aboutboxone', { 
