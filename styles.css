@@ -15,8 +15,10 @@ header {
     z-index: 999;}
 
 body {
-    background: linear-gradient(90deg, #060507 38%, #ffffff 85%);
-    z-index: -999;}
+    background-color: black;
+    z-index: -999;
+    height: 100%;
+    width: 100%}
 
 .nav-link {
     color: white;
@@ -89,14 +91,16 @@ p {
     z-index: -1;
     margin-top: 9.5vw;}
 
-.AboutDesign::before,
 .PersonalDesign::before {
     content: '';
     position: absolute;
-    background-color: #060507;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 99;}
+    margin-top: 11vw;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("./Image/Jheron.jpg");
+    background-size: 42vw 40vw;
+    background-repeat: no-repeat;}
 
 .PersonalDesign {
     display:block;
@@ -112,34 +116,31 @@ p {
     height: 19vw;
     margin: 10.5vw 0 0 38vw;
     padding: 3vw;
-    transition: 0.5s ease-in-out;
-    background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(0, 0, 0, 1)), url(./Image/scan.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(80, 80, 80,0.5)), url(./Image/AGAIN1.jpg);
     background-repeat: no-repeat;
-    background-size: 62vw 25vw;
+    background-size: 65vw 19vw;
     z-index: 1;}
 
 .PersonalDesign .Personalboxone:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(./Image/scan.jpg);
+    background-image: url(./Image/AGAIN1.jpg);
     background-repeat: no-repeat;
-    background-size: 63vw 26vw;
+    background-size: 65vw 19.1vw;
     z-index: 1; }
 
 .PersonalDesign .Personalboxtwo{
-    word-wrap: break-word;
     width: 64vw;
     height: 19vw;
     margin: 0vw 0 0 38vw;
     padding: 3vw;
-    transition: 0.5s ease-in-out;
-    background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(0, 0, 0, 1)), url(./Image/skill.jpeg);
+    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)), url(./Image/AGAIN2.jpg);
     background-repeat: no-repeat;
-    background-size: 62vw 23vw;
+    background-size: 65vw 19vw;
     z-index: 1;}
 
 .PersonalDesign .Personalboxtwo:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(./Image/skill.jpeg);
+    background-image:  url(./Image/AGAIN2.jpg);
     background-repeat: no-repeat;
-    background-size: 63vw 23vw;
+    background-size: 65vw 20vw;
     z-index: 1; } 
 
 .AboutDesign {
@@ -177,17 +178,17 @@ p {
 .AboutDesign .Aboutboxthree{
     word-wrap: break-word;
     width: 40vw;
-    height: 25vw;
+    height: 15vw;
     padding: 1vw;
     transition: 0.5s ease-in-out;
-    background-color: rgba(10, 10, 10, 0.7);
+    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(80, 80, 80,0.5));
     z-index: 1;}
 
 .PersonalDesign .Personalboxone > p,
 .PersonalDesign .Personalboxtwo > p,
 .AboutDesign .Aboutboxone > p{
     font-size: 1.2vw;
-    padding:  0 2vw 0 2vw;
+    padding:  0.8vw 2vw 0 2vw;
     transition: 1s ease-in-out;
     opacity: 0;}
 
@@ -223,12 +224,3 @@ p {
     font-style: normal;
     opacity: 1;}
 
-
-
-
-
- 
-    
-  
-    
-  
