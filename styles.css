@@ -66,10 +66,10 @@
     }
 
     .WorksDesign div {
-        width: 90%;
+        width: 100%;
         height: 200px;
     }
-
+    
     .ContactsDesign .Contactsbox {
         width: 90%;
         height: 150px;
@@ -116,7 +116,7 @@ li {
     padding: 1vw; }
 
 h1 {
-    margin: 7.5vw 0 2vw; 
+    margin: 7.5vw 0 0 2vw; 
     font-size: 4.5vw; 
     color: white;
     text-align: center;
@@ -125,7 +125,7 @@ h1 {
 
 p {
     margin-top: .5vw;
-    font-size: 1.1vw;
+    font-size: 1.7vw;
     color: white;
     text-align: center;
     font-style: normal;
@@ -240,8 +240,8 @@ a{
     
 .PersonalDesign .Personalboxone:hover > .Personal,
 .PersonalDesign .Personalboxone:hover > .Education{
-    font-size: 1.5vw;
     padding: 3vw 0 0 4vw;
+    font-size: 1.4vw;
     margin-right: -3vw;
     transform: translateY(8vw);
     z-index: 1;
@@ -263,17 +263,17 @@ a{
     
 .WorksDesign {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     overflow: hidden;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;}
 
 /*To set design in every div elements in WorkDesign*/
 .WorksDesign div {
     margin: 2vw;
     width: 40vw;
-    height: 15vw;
+    height: 18vw;
     padding: 2vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -290,33 +290,35 @@ a{
     position: relative;}
 
 .WorksDesign .Worksboxone img {
-    width: 15vw;
-    height: 27vw;
+    width: 9vw;
+    height: 16vw;
     opacity: 0;
     transition: opacity 0.5s ease;
-    margin-left: 5vw;}
+    margin-left: 4.7vw;}
     
 .WorksDesign .Worksboxtwo img {
-    width: 100%;
-    height: auto;
+    padding: auto;
+    margin-left: 0.5vw;
+    width: 22vw;
+    height: 14vw;
     opacity: 0;
     transition: opacity 0.5s ease;}
 
 .WorksDesign .Worksboxthree img {
-    width: 15vw;
-    height: 27vw;
+    width: 9vw;
+    height: 15vw;
     opacity: 0;
     transition: opacity 0.5s ease;
-    margin-left: 5vw;}
+    margin-left: 4.7vw;}
     
 .WorksDesign .Worksboxone:hover {
-    height: 59vw;}
+    width: 95vw;}
     
 .WorksDesign .Worksboxtwo:hover {
-    height: 59vw;}
+    width: 95vw;}
     
 .WorksDesign .Worksboxthree:hover {
-    height: 59vw;}
+    width: 95vw;}
 
 /*To set background images for boxes*/
 .WorksDesign .Worksboxone {
@@ -332,7 +334,7 @@ a{
 .Worksboxone.expanded, 
 .Worksboxtwo.expanded,
 .Worksboxthree.expanded {
-    height: 59vw;}
+    width: 95vw;}
 
 .WorksDesign div.expanded img{
     opacity: 1;
@@ -340,10 +342,10 @@ a{
         
 .WorksDesign .Worksboxone.expanded img,
 .WorksDesign .Worksboxthree.expanded img{
-    margin-left: 5vw;}
+    margin-left: 4.7vw;}
 
 .WorksDesign .Worksboxtwo.expanded img{
-    margin-left: auto;}
+    margin-left: 0.5vw;}
 
 .ContactsDesign {
     padding: 0 5vw 0vw 5vw;
