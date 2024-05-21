@@ -312,24 +312,26 @@ a{
     margin-left: 4.7vw;}
     
 .WorksDesign .Worksboxone:hover {
-    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(40, 40, 40, 0.1)),url(./Image/adalo.png);
     width: 95vw;}
     
 .WorksDesign .Worksboxtwo:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(40, 40, 40, 0.1)),url(./Image/wordpress_PNG47.png);
     width: 95vw;}
     
 .WorksDesign .Worksboxthree:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(40, 40, 40, 0.1)),url(./Image/figma.png);
     width: 95vw;}
 
 /*To set background images for boxes*/
 .WorksDesign .Worksboxone {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(40, 40, 40, 0.5)),url(./Image/adalo.png);}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(40, 40, 40, 0.3)),url(./Image/adalo.png);}
     
 .WorksDesign .Worksboxtwo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(40, 40, 40, 0.5)),url(./Image/wordpress_PNG47.png);}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(40, 40, 40, 0.3)),url(./Image/wordpress_PNG47.png);}
     
 .WorksDesign .Worksboxthree {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(40, 40, 40, 0.5)),url(./Image/figma.png);}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(40, 40, 40, 0.3)),url(./Image/figma.png);}
 
 /*To set the image size and box when clicked, also to change visibility of images*/
 .Worksboxone.expanded, 
@@ -364,7 +366,7 @@ a{
     justify-content: center;
     overflow: hidden;
     position: relative; 
-    margin-top: 11.5vw;
+    margin-top: 12.5vw;
     transition: 0.5s ease-in-out;}
     
 /* To set an image as a background */
