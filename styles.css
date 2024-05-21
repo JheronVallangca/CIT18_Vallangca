@@ -67,7 +67,7 @@ body {
     font-size: 2.3vw;
     display: flex;
     transition: 0.5s ease-in-out;
-    margin-top: 5vw; }
+    margin-top: 6vw; }
 
 .nav-link:hover {
     transform: scale(1.1);
@@ -204,7 +204,8 @@ a{
 .PersonalDesign .Personalboxone:hover > .Education{
     font-size: 1.5vw;
     padding: 3vw 0 0 4vw;
-    transform: translateY(9vw);
+    margin-right: -3vw;
+    transform: translateY(8vw);
     z-index: 1;
     opacity: 1;
     height: 25vw;}
@@ -224,8 +225,8 @@ a{
     
 .WorksDesign {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     flex-direction: row;
     position: relative;}
@@ -341,4 +342,46 @@ a{
 .ContactsDesign div a img {
     width: 3vw;
     height: 3vw;}
+
+    @media screen and (max-width: 768px) {
+        header {
+            height: 5vw;
+        }
+    
+        .nav-link {
+            height: 2vw;
+            font-size: 1.8vw;
+            margin-top: 2vw;
+        }
+    
+        h1 {
+            font-size: 4vw;
+        }
+    
+        p {
+            font-size: 1vw;
+        }
+    
+        .HomeDesign .Homebox {
+            width: 60vw;
+            height: 40vw;
+        }
+    
+        .PersonalDesign .Personalboxone,
+        .PersonalDesign .Personalboxtwo {
+            
+        width:60vw ;
+        height: 18vw;
+        }
+    
+        .WorksDesign div {
+            width: 90%;
+            height: 200px;
+        }
+    
+        .ContactsDesign .Contactsbox {
+            width: 90%;
+            height: 150px;
+        }
+    }
 
