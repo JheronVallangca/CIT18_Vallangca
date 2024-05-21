@@ -78,7 +78,7 @@ li {
     padding: 1vw; }
 
 h1 {
-    margin-top: 7.5vw; 
+    margin: 7.5vw 0 2vw; 
     font-size: 4.5vw; 
     color: white;
     text-align: center;
@@ -92,6 +92,11 @@ p {
     text-align: center;
     font-style: normal;
     transition: 1s ease-in-out;}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 1.8vw;
+}
 
 /* The Home page designs*/
 .HomeDesign {
@@ -185,17 +190,20 @@ p {
     z-index: 1; } 
 
 /*Trigger animation on p elements when hovered*/
-.PersonalDesign .Personalboxone > p,
+.PersonalDesign .Personalboxone .Education,
+.PersonalDesign .Personalboxone .Personal,
 .PersonalDesign .Personalboxtwo > p{
+    padding: 0.5vw 1vw 0 2vw;
+    opacity: 0;
+    display: inline-block;
     text-align: left;
-    font-size: 1.2vw;
-    padding:  0.5vw 2vw 0 2vw;
-    opacity: 0;}   
+  }   
     
-.PersonalDesign .Personalboxone:hover > p{
+.PersonalDesign .Personalboxone:hover > .Personal,
+.PersonalDesign .Personalboxone:hover > .Education{
     font-size: 1.5vw;
-    padding: 3vw 2vw 0 4vw;
-    transform: translateY(11vw);
+    padding: 3vw 0 0 4vw;
+    transform: translateY(9vw);
     z-index: 1;
     opacity: 1;
     height: 25vw;}
@@ -207,84 +215,10 @@ p {
     opacity: 1;
     height: 25vw;}
 
-.AboutDesign {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow: hidden;
-    flex-direction: row;
-    position: relative;}
-
-/*Set the keyframe animations when hovered*/
-.AboutDesign .Aboutboxone:hover {
-    transform: scale(1.05);
-    height: 15vw;
-    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)),url(./Image/89_big.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1; }
-           
-.AboutDesign .Aboutboxtwo:hover {
-    transform: scale(1.05);
-    height: 15vw;
-    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 1)),url(./Image/qh.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;}
-
-.AboutDesign .Aboutboxthree:hover {
-    transform: scale(1.05);
-    height: 20vw;
-    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/elem.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;}  
-
-/*Sets the design every boxes in AboutDesign*/
-.AboutDesign .Aboutboxone,
-.AboutDesign .Aboutboxtwo,
-.AboutDesign .Aboutboxthree{
-    word-wrap: break-word;
-    width: 40vw;
-    height: 15vw;
-    padding: 2vw;
-    margin: 5vw 2vw 3vw 2vw;
-    transition: 1s ease-in-out;
-    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(50, 50, 50,0.2));
-    z-index: 1;}
-
-/*Trigger animation on p elements when hovered*/
-.AboutDesign .Aboutboxone > p,
-.AboutDesign .Aboutboxtwo > p,
-.AboutDesign .Aboutboxthree > p{
-    font-size: 2vw;
-    font-style: century;
-    padding:  0 2vw 0 2vw;
-    opacity: 0;}
-
-.AboutDesign .Aboutboxone:hover > p,
-.AboutDesign .Aboutboxtwo:hover > p,
-.AboutDesign .Aboutboxthree:hover > p{
-    margin-top: -1.8vw;
-    transform: scale(1.03);
-    z-index: 1;
-    opacity: 1;}
-
-/*Trigger animation on h1 elements when hovered*/
-.AboutDesign .Aboutboxone > h1,
-.AboutDesign .Aboutboxtwo > h1,
-.AboutDesign .Aboutboxthree > h1{
-    font-size: 1.5vw;
-    padding: 4.5vw 2vw .5vw 2vw;
-    margin-top: -3.5vw;}
-
 .PersonalDesign .Personalboxone > h1{
     margin-top: -2.5vw;}    
 
-.PersonalDesign .Personalboxone:hover > h1,
-.AboutDesign .Aboutboxone:hover > h1,
-.AboutDesign .Aboutboxtwo:hover > h1,
-.AboutDesign .Aboutboxthree:hover > h1{
+.PersonalDesign .Personalboxone:hover > h1{
     opacity: 0;}
     
 .WorksDesign {
@@ -314,13 +248,13 @@ p {
     opacity: 1;
     transition: opacity 0.5s ease;
     position: relative;}
-    
+
 .WorksDesign .Worksboxone img {
     width: 15vw;
     height: 27vw;
     opacity: 0;
     transition: opacity 0.5s ease;
-    left: 20%;}
+    margin-left: 5vw;}
     
 .WorksDesign .Worksboxtwo img {
     width: 100%;
@@ -333,38 +267,77 @@ p {
     height: 27vw;
     opacity: 0;
     transition: opacity 0.5s ease;
-    left:20%}
+    margin-left: 5vw;}
     
 .WorksDesign .Worksboxone:hover {
-    height: 81vw;}
+    height: 59vw;}
     
 .WorksDesign .Worksboxtwo:hover {
-    height: 48vw;}
+    height: 59vw;}
     
 .WorksDesign .Worksboxthree:hover {
-    height: 87vw;}
+    height: 59vw;}
 
 /*To set background images for boxes*/
 .WorksDesign .Worksboxone {
-    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/adalo.png);}
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(40, 40, 40, 0.5)),url(./Image/adalo.png);}
     
 .WorksDesign .Worksboxtwo {
-    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/wordpress_PNG47.png);}
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(40, 40, 40, 0.5)),url(./Image/wordpress_PNG47.png);}
     
 .WorksDesign .Worksboxthree {
-    background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/figma.png);}
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(40, 40, 40, 0.5)),url(./Image/figma.png);}
 
 /*To set the image size and box when clicked, also to change visibility of images*/
-.Worksboxone.expanded {
-    height: 81vw;}
-    
-.Worksboxtwo.expanded {
-    height: 48vw;}
-    
+.Worksboxone.expanded, 
+.Worksboxtwo.expanded,
 .Worksboxthree.expanded {
-    height: 87vw;}
-    
-.WorksDesign div.expanded img {
+    height: 59vw;}
+
+.WorksDesign div.expanded img{
     opacity: 1;
     transition: opacity 0.5s ease;}
+        
+.WorksDesign .Worksboxone.expanded img,
+.WorksDesign .Worksboxthree.expanded img{
+    margin-left: 5vw;}
+
+.WorksDesign .Worksboxtwo.expanded img{
+    margin-left: auto;}
+
+.ContactsDesign {
+    padding: 0 5vw 0vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;}
+    
+.ContactsDesign .Contactsbox {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: rgb(0, 0, 0) 2vw 4vw 8vw -1vw; 
+    padding: 2%;
+    width: 70vw;
+    height: 30vw;
+    justify-content: center;
+    overflow: hidden;
+    position: relative; 
+    margin-top: 11.5vw;
+    transition: 0.5s ease-in-out;}
+    
+/* To set an image as a background */
+.ContactsDesign::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 53vw;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.1), rgba(0, 0, 0, 0.5)),url(./Image/te.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    margin-top: 12vw;}
+
+.ContactsDesign div a img {
+    width: 3vw;
+    height: 3vw;}
 
