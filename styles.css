@@ -93,6 +93,7 @@ p {
     font-style: normal;
     transition: 1s ease-in-out;}
 a{
+    font-size: 1vw;
     text-decoration: none;
     color: white;
     padding: 1.8vw;
