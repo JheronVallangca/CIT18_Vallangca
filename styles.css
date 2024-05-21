@@ -166,7 +166,7 @@ a{
     position: absolute;
     width: 100vw;
     height: 53vw;
-    background-image: linear-gradient(rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 0.5)),url("./Image/Tiger.jpg");
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(0, 0, 0, 0.5)),url("./Image/Tiger.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
