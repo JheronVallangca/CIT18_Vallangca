@@ -39,6 +39,44 @@
 }
 }
 
+@media screen and (max-width: 768px) {
+    .nav-link {
+        height: 2vw;
+        font-size: 1.8vw;
+        margin-top: 2vw;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    .HomeDesign .Homebox {
+        width: 60vw;
+        height: 40vw;
+    }
+
+    .PersonalDesign .Personalboxone,
+    .PersonalDesign .Personalboxtwo {
+        width:60vw ;
+        height: 18vw;
+    }
+
+    .PersonalDesign .Personalboxtwo:hover p{
+        font-size: 1.5vw;
+    }
+
+    .WorksDesign div {
+        width: 90%;
+        height: 200px;
+    }
+
+    .ContactsDesign .Contactsbox {
+        width: 90%;
+        height: 150px;
+    }
+}
+
+
 /* Select all and set the elements*/
 * {
     margin: 0;
@@ -342,46 +380,4 @@ a{
 .ContactsDesign div a img {
     width: 3vw;
     height: 3vw;}
-
-    @media screen and (max-width: 768px) {
-        header {
-            height: 5vw;
-        }
-    
-        .nav-link {
-            height: 2vw;
-            font-size: 1.8vw;
-            margin-top: 2vw;
-        }
-    
-        h1 {
-            font-size: 4vw;
-        }
-    
-        p {
-            font-size: 1vw;
-        }
-    
-        .HomeDesign .Homebox {
-            width: 60vw;
-            height: 40vw;
-        }
-    
-        .PersonalDesign .Personalboxone,
-        .PersonalDesign .Personalboxtwo {
-            
-        width:60vw ;
-        height: 18vw;
-        }
-    
-        .WorksDesign div {
-            width: 90%;
-            height: 200px;
-        }
-    
-        .ContactsDesign .Contactsbox {
-            width: 90%;
-            height: 150px;
-        }
-    }
 
