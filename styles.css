@@ -1,3 +1,4 @@
+/* To Add animation when hovering over divs*/
 @keyframes fadetop{
     0% {
         transform: translateY(0);
@@ -38,6 +39,7 @@
 }
 }
 
+/* Select all and set the elements*/
 * {
     margin: 0;
     padding: 0;
@@ -91,6 +93,7 @@ p {
     font-style: normal;
     transition: 1s ease-in-out;}
 
+/* The Home page designs*/
 .HomeDesign {
     padding: 0 5vw 0vw 5vw;
     display: flex;
@@ -113,6 +116,7 @@ p {
 .HomeDesign .Homebox:hover{
     transform: scale(1.1);}
 
+/* To set an image as a background */
 .HomeDesign::before {
     content: '';
     position: absolute;
@@ -125,6 +129,16 @@ p {
     z-index: -1;
     margin-top: 12vw;}
 
+/* The About me design*/
+.PersonalDesign {
+    display:block;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;}
+
+/* To set an image as a background*/
 .PersonalDesign::before {
     content: '';
     position: absolute;
@@ -136,14 +150,6 @@ p {
     background-image: url("./Image/Jheron-removebg-preview.png");
     background-size: 42vw 40vw;
     background-repeat: no-repeat;}
-
-.PersonalDesign {
-    display:block;
-    align-items: flex-end;
-    justify-content: flex-end;
-    overflow: hidden;
-    flex-direction: column;
-    position: relative;}
    
 .PersonalDesign div {
     padding: 3vw;
@@ -153,6 +159,7 @@ p {
     background-size: 65vw 19vw;
     z-index: 1;}
 
+/*Set the keyframe animations when hovered*/
 .PersonalDesign .Personalboxone{
     margin: 12vw 0 0 38vw;
     background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(80, 80, 80,0.5)), url(./Image/AGAIN1.jpg);
@@ -177,6 +184,7 @@ p {
     animation: fadebottom 2s ease 0s 1 normal forwards;
     z-index: 1; } 
 
+/*Trigger animation on p elements when hovered*/
 .PersonalDesign .Personalboxone > p,
 .PersonalDesign .Personalboxtwo > p{
     text-align: left;
@@ -207,6 +215,7 @@ p {
     flex-direction: row;
     position: relative;}
 
+/*Set the keyframe animations when hovered*/
 .AboutDesign .Aboutboxone:hover {
     transform: scale(1.05);
     height: 15vw;
@@ -231,6 +240,7 @@ p {
     background-repeat: no-repeat;
     z-index: 1;}  
 
+/*Sets the design every boxes in AboutDesign*/
 .AboutDesign .Aboutboxone,
 .AboutDesign .Aboutboxtwo,
 .AboutDesign .Aboutboxthree{
@@ -243,6 +253,7 @@ p {
     background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(50, 50, 50,0.2));
     z-index: 1;}
 
+/*Trigger animation on p elements when hovered*/
 .AboutDesign .Aboutboxone > p,
 .AboutDesign .Aboutboxtwo > p,
 .AboutDesign .Aboutboxthree > p{
@@ -251,6 +262,15 @@ p {
     padding:  0 2vw 0 2vw;
     opacity: 0;}
 
+.AboutDesign .Aboutboxone:hover > p,
+.AboutDesign .Aboutboxtwo:hover > p,
+.AboutDesign .Aboutboxthree:hover > p{
+    margin-top: -1.8vw;
+    transform: scale(1.03);
+    z-index: 1;
+    opacity: 1;}
+
+/*Trigger animation on h1 elements when hovered*/
 .AboutDesign .Aboutboxone > h1,
 .AboutDesign .Aboutboxtwo > h1,
 .AboutDesign .Aboutboxthree > h1{
@@ -266,14 +286,6 @@ p {
 .AboutDesign .Aboutboxtwo:hover > h1,
 .AboutDesign .Aboutboxthree:hover > h1{
     opacity: 0;}
-
-.AboutDesign .Aboutboxone:hover > p,
-.AboutDesign .Aboutboxtwo:hover > p,
-.AboutDesign .Aboutboxthree:hover > p{
-    margin-top: -1.8vw;
-    transform: scale(1.03);
-    z-index: 1;
-    opacity: 1;}
     
 .WorksDesign {
     display: flex;
@@ -282,7 +294,8 @@ p {
     overflow: hidden;
     flex-direction: row;
     position: relative;}
-    
+
+/*To set design in every div elements in WorkDesign*/
 .WorksDesign div {
     margin: 2vw;
     width: 40vw;
@@ -295,7 +308,8 @@ p {
     transition: 1s ease-in-out;
     overflow: hidden;
     position: relative;}
-    
+
+/*Set design to images when hovered*/
 .WorksDesign div:hover img {
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -329,7 +343,8 @@ p {
     
 .WorksDesign .Worksboxthree:hover {
     height: 87vw;}
-    
+
+/*To set background images for boxes*/
 .WorksDesign .Worksboxone {
     background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/adalo.png);}
     
@@ -338,5 +353,18 @@ p {
     
 .WorksDesign .Worksboxthree {
     background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(0, 0, 0, 1)),url(./Image/figma.png);}
+
+/*To set the image size and box when clicked, also to change visibility of images*/
+.Worksboxone.expanded {
+    height: 81vw;}
     
-   
+.Worksboxtwo.expanded {
+    height: 48vw;}
+    
+.Worksboxthree.expanded {
+    height: 87vw;}
+    
+.WorksDesign div.expanded img {
+    opacity: 1;
+    transition: opacity 0.5s ease;}
+

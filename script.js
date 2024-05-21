@@ -7,12 +7,12 @@ const sr = ScrollReveal({
 
 sr.reveal('.PersonalDesign .Personalboxone', {
     origin: 'top',
-    delay:350,  
+    delay: 350,  
 });
 
 sr.reveal('.PersonalDesign .Personalboxtwo', {
     origin: 'bottom',
-    delay:250,
+    delay: 250,
 });
 
 sr.reveal('.AboutDesign .Aboutboxone', { 
@@ -43,3 +43,12 @@ sr.reveal('.WorksDesign .Worksboxthree', {
     delay: 400,
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const worksBoxes = document.querySelectorAll('.WorksDesign div');
+
+    worksBoxes.forEach(box => {
+        box.addEventListener('click', function() {
+            this.classList.toggle('expanded');
+        });
+    });
+});
